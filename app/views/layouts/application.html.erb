@@ -5,8 +5,10 @@
 <%= csrf_meta_tags %>
 <%= render 'layouts/shim' %>
 
+<body>
 <%= render 'layouts/header' %>
 <div class="container">
   <%= yield %>
   <%= render 'layouts/footer' %>
 </div>
+</body>
