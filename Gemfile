@@ -9,17 +9,18 @@ gem 'bcrypt'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-    gem 'sqlite3'
-    gem 'rspec-rails'
-    gem 'guard-rspec'
-    gem 'spork-rails'
-    gem 'guard-spork'
-    gem 'childprocess'
+  gem 'sqlite3'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
-    gem 'selenium-webdriver'
-    gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'capybara'
+  gem 'factory_girl_rails'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -38,12 +39,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 group :doc do
-    gem 'sdoc', require: false
+  gem 'sdoc', require: false
 end
 
 group :production do
-    gem 'pg'
-    gem 'rails_12factor'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
