@@ -15,6 +15,8 @@ group :development, :test do
   gem 'spork-rails'
   gem 'guard-spork'
   gem 'childprocess'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 group :test do
